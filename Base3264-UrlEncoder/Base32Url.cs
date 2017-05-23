@@ -141,6 +141,9 @@ namespace MhanoHarkness
         ///     The array must have exactly 32 elements. EncodeTo in each CharMap is the character used for encoding.
         ///     DecodeFrom in each CharMap contains a list of characters that decode. This allows you to decode 1 L l i and I all as having the same meaning.
         ///     The position in the array of CharMaps is the binary "value" encoded, i.e. position 0 to 31 in the array map to binary nibble values of 0 to 31.
+        ///     NOTE: an alphabet such as crockford may result in a case insensitive decoding of text, but case SENSITIVE must be specified as true in cases
+        ///           like this to provide a unique mapping during decoding, thus to create a crockford style map you must always include the upper and lower
+        ///           decode mappings of any case insensitive decode characters required.
         /// </param>
         public Base32Url(bool padding, bool caseSensitive, bool ignoreWhiteSpaceWhenDecoding, CharMap[] alphabet)
         {

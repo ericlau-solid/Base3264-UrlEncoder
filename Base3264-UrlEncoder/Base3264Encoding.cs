@@ -216,7 +216,7 @@ namespace MhanoHarkness
         }
 
         /// <summary>
-        /// Binary to base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). No padding, case SENSITIVE.
+        /// Binary to base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). Case insensitive, no padding.
         /// </summary>
         public static string ToBase32Crockford(byte[] input)
         {
@@ -224,7 +224,7 @@ namespace MhanoHarkness
         }
 
         /// <summary>
-        /// String to base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). No padding, case SENSITIVE.
+        /// String to base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). Case insensitive, no padding.
         /// Uses bom-free utf8 for string to binary encoding.
         /// </summary>
         public static string ToBase32Crockford(string input)
@@ -313,7 +313,7 @@ namespace MhanoHarkness
         }
 
         /// <summary>
-        /// To binary from base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). No padding, case SENSITIVE.
+        /// To binary from base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). Case insensitive, no padding.
         /// </summary>
         public static byte[] FromBase32Crockford(string input)
         {
@@ -321,7 +321,7 @@ namespace MhanoHarkness
         }
 
         /// <summary>
-        /// To string from base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). No padding, case SENSITIVE.
+        /// To string from base32 encoding designed for human readability or OCR / hand writing recognition situations (non symmetric conversion - i.e. 1IiLl all mean the same thing). Case insensitive, no padding.
         /// Uses bom-free utf8 for string to binary encoding.
         /// </summary>
         public static string FromBase32CrockfordToString(string input)
