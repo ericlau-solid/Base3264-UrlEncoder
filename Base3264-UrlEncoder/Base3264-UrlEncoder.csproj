@@ -42,6 +42,8 @@
   <ItemGroup>
     <Compile Include="Base32Url.cs" />
     <Compile Include="Base64Url.cs" />
+    <Compile Include="Base3264Encoding.cs" />
+    <Compile Include="EncodingType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
