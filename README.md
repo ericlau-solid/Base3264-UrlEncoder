@@ -32,7 +32,8 @@ Base64Url (Encoder / Decoder)
 * Based on the standard .NET Base64 encoder
 * Uses the URL-Safe alternative Base64 alphabet from RFC 4648
 * This is not the same as Microsoft’s HttpServerUtility.UrlTokenEncode.
-* Further Information and Usage
+
+Further Information and Usage:
 
 There are other implementations of base32 encoding out there but I feel the code of this base32 implementation is much simpler (far less code involved in the bit shifting calculations).
 
