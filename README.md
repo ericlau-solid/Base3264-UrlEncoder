@@ -56,8 +56,8 @@ b32.Encode(myByteArray);
 JBSWY3DPEBLW64TMMQQQ====
 For more information about the standards involved, please see RFC 4648 http://tools.ietf.org/html/rfc4648
 
-Base3264Encoding Helper / Wrapper Usage
-=======================================
+Base3264Encoding Convienience Methods
+=====================================
 
 string str1 = Base3264Encoding.ToZBase32(myByteArray);
 
