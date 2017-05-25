@@ -52,9 +52,11 @@ Base32Url.ToBase32String(myByteArray);
 JBSWY3DPEBLW64TMMQQQ
  
 var b32 = new Base32Url(true); // Base32Url(bool usePadding)
+
 b32.Encode(myByteArray);
  
 JBSWY3DPEBLW64TMMQQQ====
+
 For more information about the standards involved, please see RFC 4648 http://tools.ietf.org/html/rfc4648
 
 Base3264Encoding Convienience Methods
