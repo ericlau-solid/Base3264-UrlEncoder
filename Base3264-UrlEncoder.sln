@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base3264-UrlEncoder", "Base3264-UrlEncoder\Base3264-UrlEncoder.csproj", "{F53C5799-94DE-4997-95DD-27D67301BDE5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base3264-UrlEncoder.Tests", "Base3264-UrlEncoder.Tests\Base3264-UrlEncoder.Tests.csproj", "{8238FE68-5D3B-4D98-A771-5913F549466A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{680ACCC9-4740-492A-8481-3DB68114D7C3}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
