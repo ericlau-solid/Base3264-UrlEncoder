@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Base3264-UrlEncoder</id>
+    <version>1.0.2</version>
+    <title>Base3264-UrlEncoder</title>
+    <authors>Eric Lau, Mhano Harkness</authors>
+    <owners>ericlau-solid, mhano</owners>
+    <licenseUrl>https://www.codeproject.com/info/cpol10.aspx</licenseUrl>
+    <projectUrl>https://github.com/ericlau-solid/Base3264-UrlEncoder/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Support for crockford base32 encoding</releaseNotes>
+    <summary>Standards based implementations of various Base32 and Base64 encoding/decoding methods.</summary>
+    <description>Standards based implementations of various Base32 and Base64 encoding/decoding methods. These are designed to encode binary data to plain text, and decode the resulting text back to the original binary. This is useful when you need to transfer binary data through technologies that only support text (such as including binary security tokens in URLs).
+
+Base32Url encodes with only the characters A to Z and 2 to 7. No hyphens, underscores, pluses, slashes or equals are used, making it usable as a URL token in almost all circumstances. Base32Url also supports custom alphabets. A custom case sensitive alphabet with only consonant (non vowel) characters can be used to ensure your tokens do not contain accidental profanities. The following is an example that avoids vowels, the letter L and has no numeric characters: BCDFGHKMNPQRSTVWXYZbcdfghkmnpqrs.
+
+Base64Url is more compact than Base32Url and it is almost always usable as a URL token or file-name. The only non alpha-numeric characters Base64Url contains are the hyphen (-) and underscore (_) characters, neither of these need further encoding for use in URLs or file-names.
+      
+* Supports standard Base32 with padding characters (=) per Base32 from RFC 4648.
+* Supports the Base32 extension / alternate alphabet z-base-32 and the asymmetric crockford encoding.</description>
+    <copyright>Copyright Mhano Harkness and Eric Lau 2014-2017</copyright>
+    <tags>base32 zbase32 z-base-32 base64url base64 crockford profanity Base3264Encoding Base32Url rfc4648</tags>
+  </metadata>
+</package>
