@@ -5,12 +5,12 @@ using MhanoHarkness;
 
 namespace Base3264_UrlEncoder.Tests
 {
-    /// <summary>
-    /// Basic unit tests covering key functional variants of base 32 encoding / decoding.
-    /// TODO: Anyone feels like it some more comprehensive testing of the crockford encoding would be helpful. Cheers, Mhano
-    /// TODO: Tests evolved a bit over time, refactoring to organise might be needed if adding significant test cases.
-    /// </summary>
-    public class Base32UrlTests
+	/// <summary>
+	/// Basic unit tests covering key functional variants of base 32 encoding / decoding.
+	/// TODO: Anyone feels like it some more comprehensive testing of the crockford encoding would be helpful. Cheers, Mhano
+	/// TODO: Tests evolved a bit over time, refactoring to organise might be needed if adding significant test cases.
+	/// </summary>
+	public class Base32UrlTests
 	{
 		private static string[][] rfc4684TestVectors = new[]{
 																new []{"f", "MY======"},
@@ -43,9 +43,9 @@ namespace Base3264_UrlEncoder.Tests
 		[Fact]
 		public void NotIgnoreWs()
 		{
-            Assert.Throws<ArgumentException>(() => 
-			    Assert.Equal(Encoding.ASCII.GetString(new Base32Url(false, true, false).Decode("JBS\t\r\n WY3D\tPE BLW64\n TMM\r QQQ")), "Hello World!")
-            );
+			Assert.Throws<ArgumentException>(() =>
+				Assert.Equal(Encoding.ASCII.GetString(new Base32Url(false, true, false).Decode("JBS\t\r\n WY3D\tPE BLW64\n TMM\r QQQ")), "Hello World!")
+			);
 		}
 
 		[Fact]
@@ -91,7 +91,7 @@ namespace Base3264_UrlEncoder.Tests
 			// no vowels (prevents accidental profanity)
 			// no numbers or letters easily mistakable
 
-			foreach (string alphabet in new []{"BCDFGHKMNPQRSTVWXYZ23456789bcdfg", "BCDFGHKMNPQRSTVWXYZbcdfghkmnpqrs"})
+			foreach (string alphabet in new[] { "BCDFGHKMNPQRSTVWXYZ23456789bcdfg", "BCDFGHKMNPQRSTVWXYZbcdfghkmnpqrs" })
 			{
 				var enc = new Base32Url(true, true, false, alphabet);
 
@@ -108,7 +108,7 @@ namespace Base3264_UrlEncoder.Tests
 			// no vowels (prevents accidental profanity)
 			// no numbers or letters easily mistakable
 
-			foreach (string alphabet in new[] {"BCDFGHKMNPQRSTVWXYZ23456789~!@#$"})
+			foreach (string alphabet in new[] { "BCDFGHKMNPQRSTVWXYZ23456789~!@#$" })
 			{
 				var enc1 = new Base32Url(true, false, false, alphabet);
 				var enc2 = new Base32Url(true, false, false, alphabet.ToLower());
